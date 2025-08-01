@@ -39,5 +39,8 @@ document.getElementById('box4').addEventListener('click', () => {
 });
 
 document.getElementById('sub-btn').addEventListener('click', () => {
-    document.getElementById('greet').innerHTML = "Hello, " + document.getElementById('name').value;
+    n = document.getElementById('name').value
+    if(n !== ""){
+        document.getElementById('greet').innerHTML = "Hello, " + n;
+    }
 });
